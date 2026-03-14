@@ -1,9 +1,11 @@
-import java.util.*;  // Import utilities like ArrayList, Queue
 
+import java.util.*;  // Import utilities like ArrayList, Queue
+@SuppressWarnings("unchecked") // Suppress unchecked warnings for generic array creation
 class kahns_algo {
 
     // Edge class represents a directed edge (src -> dest)
     static class Edge {
+
         int src;   // source vertex
         int dest;  // destination vertex
 
