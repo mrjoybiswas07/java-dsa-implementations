@@ -88,7 +88,7 @@ public class Prims_Algo {
 
         System.out.println("Final (Minimum) Cost of MST = " + finalCost); // print result
     }
-
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) {
 
         int V = 4; // number of vertices
