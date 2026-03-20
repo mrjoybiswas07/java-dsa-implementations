@@ -18,7 +18,6 @@ public class Connecting_Cities {
             return this.cost - e2.cost;                      // min-heap: lower cost = higher priority
         }
     }
-
     public static int connectCities(int cities[][]) {
         PriorityQueue<Edge> pq = new PriorityQueue<>();      // min-heap to pick cheapest edge
         boolean vis[] = new boolean[cities.length];          // track visited cities
@@ -36,12 +35,12 @@ public class Connecting_Cities {
                 }
             }
         }
-        return finalCost;                                    // return total MST cost (missing in original)
+        return finalCost;                                    // return total MST cost (missing in original) 
     }
 
     public static void main(String[] args) {
-        int cities[][] = { // adjacency matrix of city connections
-            {0, 1, 2, 3, 4}, // city 0 connections
+         int cities[][] = { // adjacency matrix of city connections
+            {0, 1, 2, 3, 4}, // city 0  connections
             {1, 0, 5, 0, 7}, // city 1 connections
             {2, 5, 0, 6, 0}, // city 2 connections
             {3, 0, 6, 0, 0}, // city 3 connections
