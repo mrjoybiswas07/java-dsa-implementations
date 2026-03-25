@@ -26,7 +26,6 @@ public class zero_one_Kanapsack_Memoization {
             return dp[n][W]; // return result
         }
     }
-
     public static void main(String[] args) {
         int val[] = { 15, 14, 10, 45, 30 }; // values
         int wt[] = { 2, 5, 1, 3, 4 }; // weights
