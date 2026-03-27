@@ -15,7 +15,6 @@ public class Longest_Common_Subsequence_Tabulation {
         for (int i = 1; i < n + 1; i++) {
             for (int j = 1; j < m + 1; j++) {
 
-                 
                 if (str1.charAt(i - 1) == str2.charAt(j - 1)) {
                     dp[i][j] = dp[i - 1][j - 1] + 1;
                 } else {
@@ -30,8 +29,8 @@ public class Longest_Common_Subsequence_Tabulation {
     }
 
     public static void main(String[] args) {
-        String str1 = "abcde";
-        String str2 = "abed";
-        System.out.println(lcsTab(str1, str2));
+        String str1 = "abcdge";
+        String str2 = "abedg";
+        System.out.println(lcsTab(str1, str2)); // output = 4
     }
 }
