@@ -19,7 +19,7 @@ public class Queries_on_ST {
     }
 
     public static int getSumUtil(int i, int si, int sj, int qi, int qj) {
-        if (qj <= si || qi >= sj) { // non - overlopping
+        if (qj < si || qi > sj) { // non - overlopping
             return 0;
         } else if (si >= qi && sj <= qj) { // Complete overlap
             return tree[i];
