@@ -81,4 +81,4 @@ public class Update_ST {
 
         System.out.println(getSum(arr, 2, 5)); // sum after update
     }
-}
+} 
