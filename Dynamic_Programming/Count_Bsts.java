@@ -14,7 +14,6 @@ public class Count_Bsts {
         }
         return dp[n];
     }
-
     public static void main(String[] args) {
         int n = 4;
         System.out.println(countBST(n));
